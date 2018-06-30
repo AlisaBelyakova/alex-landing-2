@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sunflower', sans-serif; 
+    text-decoration: none;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#header-name{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 20;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 50px;
+    color: orangered;
+    background-color: rgba(3, 231, 212);
+    padding: 5px 30px 5px 80px;
+    width: auto;
+    height: auto;
+}
+
+/* ================================================= SLIDES  */
+
+.gradient {
+    z-index: 13;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.3), transparent);
+}
+
+.gradient-bottom {
+    z-index: 13;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background: linear-gradient( transparent , rgb(0, 0, 0, 0.3));
+}
+#slides {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    visibility: hidden;
+    transition: all 3s;
+}
+
+#img-1  { z-index: 12; }
+#img-2  { z-index: 11; }
+#img-3  { z-index: 10; }
+#img-4  { z-index: 9;  }
+#img-5  { z-index: 8;  }
+#img-6  { z-index: 7;  }
+#img-7  { z-index: 6;  }
+#img-8  { z-index: 5;  }
+#img-9  { z-index: 4;  }
+#img-10 { z-index: 3;  }
+#img-11 { z-index: 2;  }
+#img-12 { z-index: 1;  } 
+
+.zoom {
+    transform: scale(1.1 , 1.1) rotate(2deg) translateY(-2%);
+    overflow: hidden;
+}
+
+/* ================================================= STIKER  */
+
+.stiker {
+    overflow: hidden;
+    transform: rotate(-30deg);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 14;
+    background-color: aliceblue;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 7px 5px rgb(0, 0, 0, 0.75);
+    border: 1px dotted grey;
+}
+#stiker-text-1 , #stiker-text-2 {
+    overflow: hidden;
+    margin: 5% 10%;
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(175, 1, 1);
+    width: auto;
+    height: auto;
+    line-height: 22px;  
+}
+
+#stiker-text-1 {
+    transform: rotate(-2deg) ;
+    font-size: 19px;
+}
+
+#stiker-text-2 {
+    position: relative;
+    left: 25px;
+    transform: rotate(4deg);
+    font-size: 22px;
+    /* text-align: center; */
+}
+/* ================================================= NAVBAR  */
+
+/* 
+#navbar-box {
+
+    z-index: 13;
+    position: fixed;
+    top: 50%;
+    display: flex;
+}
+#tabs-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav-tabs {
+    height: 60px;
+    border-bottom: 80px solid orangered;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+#tab-names{
+    z-index: 16;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 50%;
+}
+.nav-text {
+    width: auto;  
+    height: auto;
+    font-size: 25px;
+    font-weight: 300;
+} */
+
+#navbar-box {
+    width: 80%;
+    text-decoration: none;
+    padding: 0 5%;
+    z-index: 14;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 75%;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+}
+a {
+    text-decoration: none;
+}
+.nav-btn {
+    position: relative;
+    top: 20px;
+    justify-self: left;
+    margin:0 5px;
+    text-decoration: none;
+    width: 200px;
+    height: auto;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    padding: 10px 40px;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: 3px solid white;
+    border-radius: 230px 25px 230px 25px/ 15px 230px 15px 230px;
+    /* border-radius: 280px 200px 280px 200px/ 200px 280px 200px 280px; */
+}
+#link-1, #link-2, #link-3 {
+    text-decoration: none;
+}
+#projects{
+    transform: rotate(-7deg);
+    color: orangered;
+    font-size: 30px;
+}
